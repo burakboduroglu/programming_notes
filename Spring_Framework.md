@@ -26,6 +26,22 @@ public class TestService{
 }
 ```
 
+#### @Autowired :
+- Bağımlılıkların enjekte edilmesi (dependency injection) için kullanılan bir yapıdır.
+
+```java 
+public class Brand{
+   private int id;
+   private String name;
+   
+   @Autowired
+   public Brand(int id, String name){
+     this.id = id;
+     this.name = name;
+   }
+}  
+```
+
 #### @Controller :
 - Sınıf düzeyinde bir açıklamadır.
 - Bir sınıfı web istek işleyicisi olarak işaretler.
