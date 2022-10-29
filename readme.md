@@ -1,6 +1,6 @@
 ## 🤖 Bu Repository Hakkında
 
-Bu repository aşağıda bulunan konular için yardımcı kaynak olarak oluşturulmuştur konular ve konu anlatımları eklenecektir.
+Bu repository aşağıda bulunan konular için yardımcı kaynak olarak oluşturulmuştur. Konular ve konu anlatımlı notlar eklenecektir.
 
 - Spring Framework
 - Hibernate
