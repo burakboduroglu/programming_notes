@@ -1,7 +1,14 @@
 ## 🥳 Lombok Annotations
 
 #### @Data:
--@Data, @ToString, @EqualsAndHashCode, @Getter / @Setter ve @RequiredArgsConstructor özelliklerini bir araya toplayan bir anotasyondur.
+<ul>
+<li>@ToString</li>  
+<li>@EqualsAndHashCode</li>
+<li>@Getter</li>
+<li>@Setter</li>
+<li>@RequiredArgsConstructor</li>
+</ul>
+özelliklerini bir araya toplayan bir anotasyondur.
 
 #### @NoArgsConstructor:
 - Boş bir consturctor oluşturmayı sağlar.
