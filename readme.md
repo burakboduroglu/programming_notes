@@ -5,6 +5,7 @@ Bu repository aşağıda bulunan konular için yardımcı kaynak olarak oluştur
 - Spring Framework
 - Hibernate
 - MongoDB
+- Lombok
 
 Umarım bu repository size yardımcı olur. Ziyaret ettiğiniz için teşekkürler.
 
