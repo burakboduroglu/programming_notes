@@ -52,7 +52,7 @@ public class Brand{
 @Controller  
 @RequestMapping("/api/brands")  
 public class BrandsController{
-   @GetMapping(/getall)  
+   @GetMapping("/getall")  
    public Employee getAll(){  
        return brandService.getAll(); 
    }  
@@ -66,7 +66,7 @@ public class BrandsController{
 @Controller  
 @RequestMapping("/api/brands")  
 public class BrandsController{
-   @GetMapping(/getall)  
+   @GetMapping("/getall")  
    public Employee getAll(){  
        return brandService.getAll(); 
    }  
