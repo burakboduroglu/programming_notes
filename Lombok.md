@@ -1,6 +1,7 @@
 ## 🥳 Lombok Annotations
 
 #### @Data:
+
 <ul>
 <li>@ToString</li>  
 <li>@EqualsAndHashCode</li>
@@ -8,16 +9,33 @@
 <li>@Setter</li>
 <li>@RequiredArgsConstructor</li>
 </ul>
-özelliklerini bir araya toplayan bir anotasyondur.
+ This annotation is a convenient shortcut that bundles the features of @ToString, @EqualsAndHashCode, @Getter / @Setter and @RequiredArgsConstructor together.
+
+---
 
 #### @NoArgsConstructor:
-- Boş bir consturctor oluşturmayı sağlar.
+
+- It helps to create a constructor with no arguments.
+
+---
 
 #### @AllArgsConstructor:
-- Sınıfta bulunan elemanları sahip bir constructor oluşturmayı sağlar.
+
+- It helps to create a constructor with all arguments.
+
+---
 
 #### @Getter:
-- Sınıftaki elemanların "getter" metodlarını ekler.
+
+- Add every getter method for every field in the class.
+
+---
 
 #### @Setter:
-- Sınıftaki elemanların "setter" metodlarını ekler.
+
+- Add every setter method for every field in the class.
+
+---
+
+✅ If you like this article, you can give me a star on. 😎
+Thanks for reading. 🙏

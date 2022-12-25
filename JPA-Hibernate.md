@@ -1,38 +1,39 @@
 ## 📃 JPA Hibernate Annotations
 
 #### @Entity :
-- Sınıf bir varlık olduğunu belirtir.
+
+- This annotation is used to mark a class as an entity class.
+- This annotation is used to create a table in the database.
 
 ```Java
-import javax.persistence.Entity;
-
 @Entity
 public class Brand {
 }
 ```
 
+---
+
 #### @Table :
-- Bu varlığın eşlendiği veritabanındaki tablosunu belirtir.
-- @Table notasyonun name niteliği, tablo adını belirtmek için kullanılır.
+
+- @Table annotation is used to specify the details of the table that will be created in the database.
+- The name attribute of the @Table annotation is used to specify the name of the table.
 
 ```Java
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
 @Entity
 @Table(name = "brands")
 public class Brand {
 }
 ```
 
+---
+
 #### @Column :
-- @Column açıklamasını kullanarak sütun eşlemesi belirtilir.
-- Bu notasyonun name niteliği, tablonun sütun adını belirtmek için kullanılır.
+
+- @Column annotation is used to specify the details of the column that will be created in the database.
+- The name attribute of the @Column annotation is used to specify the name of the column.
 
 ```Java
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+
 
 @Entity
 @Table(name = "brands")
@@ -43,26 +44,29 @@ public class Brand {
 }
 ```
 
+---
+
 #### @Id :
-- @Id anotasyonu eninty sınıfında "primary key" belirlemek için kullanılır.
+
+- @Id annotation is used to specify the primary key of an entity.
+- The @Id annotation is always used with the @GeneratedValue annotation.
 
 ```Java
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
 @Entity
 @Table(name = "brands")
 public class Brand {
     @Id
     @Column(name = "id")
     private int id;
-  
+
 }
 ```
 
+---
+
 #### @ManyToOne :
-- @ManyToOne birçok marka ("brands") aynı marka detayını paylaşabilir. Yani, markadan markaya marka detayı, çoktan bire bir ilişkidir. @ManyToOne ek açıklaması aynı şekilde kullanılabilir.
+
+- @ManyToOne annotation is used to specify many to one relationship with another entity.
 
 ```Java
 @Entity
@@ -74,8 +78,12 @@ public class Brand {
 }
 ```
 
+---
+
 #### @OneToMany :
-- @OneToMany Markadan marka detayına bire çok ilişki olacaktır. Bu ilişkinin sahibi marka detayıdır. Bu nedenle, iki yönlü ilişki yapmak için Markada 'mappedBy' özelliğini kullanacağız.
+
+- @OneToMany annotation is used to specify one to many relationship with another entity.
+- The mappedBy attribute of the @OneToMany annotation is used to specify the property of the entity that is the owner of the relationship.
 
 ```Java
 @Entity
@@ -86,81 +94,75 @@ public class Brand {
     private BrandDetail brandDetail;
 }
 ```
+
+---
+
 #### @PrimaryKeyJoinColumn :
-- @PrimaryKeyJoinColumn aynı birincil anahtarı paylaşan varlıkları ilişkilendirmek için kullanılır.
 
-#### @JoinColumn :
-- @JoinColumn foreign key varlıklardan biri tarafından tutulduğunda bire bir veya çoktan bire ilişkilendirmeler için kullanılır.
+- @PrimaryKeyJoinColumn annotation is used to specify the primary key of the entity that is the owner of the relationship.
 
-#### @JoinTable ve @MapsId: 
-- Bir ilişkilendirme tablosu aracılığıyla bağlanan varlıklar için @JoinTable ve mappedBy kullanılmalıdır. 
-- @MapsId: Paylaşılan anahtara sahip iki varlık, @MapsId ek açıklaması kullanılarak kalıcı hale getirilebilir.
-
-````
-@OneToOne
-@MapsId
-@JoinColumn(name = "generalDetail")
-private Brand brand;
-````
-
-#### @OneToOne:
-- @OneToOne Marka ve Marka Ayrıntısı varlıkları aynı birincil anahtarı paylaşır ve bunları @OneToOne ve @PrimaryKeyJoinColumn kullanarak ilişkilendirebiliriz. Bu durumda Marka Detayı id özelliğine @GeneratedValue ile açıklama eklenmez. Marka Detayının kimliği için Marka'nın id değeri kullanılacaktır.
-
-````Java
+```Java
 @Entity
 @Table(name = "brands")
 public class Brand {
-   
-  @Id
-  @Column(name = "id")
-  @GeneratedValue
-  private int id;
-   
-  @OneToOne(cascade = CascadeType.MERGE)
-  @PrimaryKeyJoinColumn
-  private BrandDetail brandDetail;
+
+    @PrimaryKeyJoinColumn
+    private int id;
 }
- 
-@Entity
-@Table(name = "brandDetails")
-public class BrandDetail {
- 
-  @Id
-  @Column(name = "id")
-  private int id;
-}
-```` 
-⚠️ Dikkat edilecek noktalar:
-- @PrimaryKeyJoinColumn, aynı birincil anahtarı paylaşan ilişkili varlıklar için kullanılmalıdır.
-- @JoinColumn & @OneToOne, foreign key varlıklardan biri tarafından tutulduğunda, öznitelikle eşlenmelidir.
-#### @OneToOne :
-- Marka ve Marka Ayrıntısı bir foreign key aracılığıyla bağlanır, bu nedenle @OneToOne ve @JoinColumn ek açıklamaları kullanılabilir. Aşağıda belirtilen snippet'te Marka için oluşturulan id, Marka Detayı tablosunun 'brandId' sütununa eşlenecektir. @MapsId aynı şey için kullanılır.
-````Java
-@Entity
-@Table(name = "brandDetails")
-public class BrandDetail {
-  @Id
-  @Column(name = "id")
-  @GeneratedValue
-  private int id;
-   
-  @OneToOne
-  @MapsId
-  @JoinColumn(name = "brandId")
-  private Brand brand;
-}
- 
+```
+
+---
+
+#### @JoinColumn :
+
+- @JoinColumn annotation is used to specify the column that will be created in the database as a foreign key.
+
+```Java
 @Entity
 @Table(name = "brands")
-public class Communication {
- 
-  @Id
-  @Column(name = "ID")
-  @GeneratedValue
-  private Integer id;
- 
-  @OneToOne(mappedBy = "brand", cascade = CascadeType.ALL)
-  private BrandDetail brandDetail;
+public class Brand {
+
+    @JoinColumn(name = "brandDetail")
+    private BrandDetail brandDetail;
 }
-````
-✅ Beğenirseniz yıldızlamayı unutmayın. 😎
+```
+
+---
+
+#### @JoinTable ve @MapsId:
+
+- It is used to specify the join table that will be created in the database.
+- @JoinTable annotation is used to specify the join table that will be created in the database.
+- @MapsId annotation is used to specify the primary key of the entity that is the owner of the relationship.
+
+```Java
+@Entity
+@Table(name = "brands")
+public class Brand {
+
+    @JoinTable(name = "brands")
+    private BrandDetail brandDetail;
+}
+```
+
+---
+
+#### @OneToOne:
+
+- @OneToOne annotation is used to specify one to one relationship with another entity.
+- The mappedBy attribute of the @OneToOne annotation is used to specify the property of the entity that is the owner of the relationship.
+
+```Java
+@Entity
+@Table(name = "brands")
+public class Brand {
+
+    @OneToOne(mappedBy = "brands")
+    private BrandDetail brandDetail;
+}
+```
+
+---
+
+✅ If you like this article, you can give me a star on. 😎
+Thanks for reading. 🙏

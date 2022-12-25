@@ -227,4 +227,5 @@ let newArr = arr.findIndex(function (val) {
 
 ---
 
-- Thanks for visiting my repository.
+✅ If you like this article, you can give me a star on. 😎
+Thanks for reading. 🙏

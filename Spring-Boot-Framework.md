@@ -2,9 +2,11 @@
 
 #### @Repository :
 
-- Sınıf düzeyinde bir açıklamadır.
-- Depo veritabanına erişen bir DAO'dur.
-- Depo veritabanı ile ilgili tüm işlemleri yapar.
+- Class Level Annotation
+- It can reach the database and do all the operations.
+- It make the connection between the database and the business logic.
+- DAO is a repository.
+- It is a marker interface.
 
 ```java
 @Repository
@@ -17,8 +19,11 @@ public class TestRepo{
 
 #### @Service :
 
-- Sınıf düzeyinde kullanılır.
-- Spring'e sınıfın iş mantığını söyler.
+- Class Level Annotation
+- It is a marker interface.
+- It is a business logic.
+- It is a service layer.
+- It used to create a service layer.
 
 ```java
 @Service
@@ -29,9 +34,15 @@ public class TestService{
 }
 ```
 
+---
+
 #### @Autowired :
 
-- Bağımlılıkların enjekte edilmesi (dependency injection) için kullanılan bir yapıdır.
+- Field Level Annotation
+- It is used to inject the dependency.
+- It is used to inject the object.
+- It is used to inject the object reference.
+- Dependency Injection is a design pattern.
 
 ```java
 public class Brand{
@@ -46,12 +57,15 @@ public class Brand{
 }
 ```
 
+---
+
 #### @Controller :
 
-- Sınıf düzeyinde bir açıklamadır.
-- Bir sınıfı web istek işleyicisi olarak işaretler.
-- Genellikle Web sayfalarını sunmak için kullanılır.
-- Çoğunlukla @RequestMapping açıklaması ile kullanılır.
+- Class Level Annotation
+- It is a marker interface.
+- It is a controller layer.
+- It is used to create a controller layer.
+- It use with @RequestMapping annotation.
 
 ```java
 @Controller
@@ -63,10 +77,13 @@ public class BrandsController{
    }
 }
 ```
+
+---
 
 #### @RequestMapping :
 
-- Web isteklerini eşleştirmek için kullanılır.
+- Method Level Annotation
+- It is used to map the HTTP request with specific method.
 
 ```java
 @Controller
@@ -79,52 +96,137 @@ public class BrandsController{
 }
 ```
 
+---
+
 #### @GetMapping :
 
-- Belirli işleyici yöntemiyle HTTP GET isteklerini işler.
-- Veri listelemek veya görüntülemek için kullanılır.
-- @RequestMapping(method = RequestMethod.GET) yerine kullanılır.
+- Method Level Annotation
+- It is used to map the HTTP GET request with specific method.
+- It is used to get the data.
+- It is used to read the data.
+  ```java
+  @GetMapping("/getall")
+  public Employee getAll(){
+      return brandService.getAll();
+  }
+  ```
+
+---
 
 #### @PostMapping :
 
-- Belirli işleyici yöntemiyle HTTP POST isteklerini işler.
-- Veri eklemek için kullanılır.
-- @RequestMapping(method = RequestMethod.POST) yerine kullanılır.
+- Method Level Annotation
+- It is used to map the HTTP POST request with specific method.
+- It is used to add the data.
+- It is used to create the data.
+  ```java
+  @PostMapping("/add")
+  public void add(@RequestBody Brand brand){
+      brandService.add(brand);
+  }
+  ```
+
+---
 
 #### @PutMapping :
 
-- Belirli işleyici yöntemiyle HTTP PUT isteklerini işler.
-- Veriyi güncellemek için kullanılır.
-- @RequestMapping(method = RequestMethod.PUT) yerine kullanılır.
+- Method Level Annotation
+- It is used to map the HTTP PUT request with specific method.
+- It is used to update the data.
+  ```java
+  @PutMapping("/update")
+  public void update(@RequestBody Brand brand){
+      brandService.update(brand);
+  }
+  ```
+
+---
 
 #### @DeleteMapping :
 
-- Belirli işleyici yöntemiyle HTTP DELETE isteklerini işler.
-- Veriyi silmek için kullanılır.
-- @RequestMapping(method = RequestMethod.DELETE) yerine kullanılır.
--
+- Method Level Annotation
+- It is used to map the HTTP DELETE request with specific method.
+- It is used to delete the data.
+  ```java
+  @DeleteMapping("/delete")
+  public void delete(@RequestBody Brand brand){
+      brandService.delete(brand);
+  }
+  ```
+
+---
 
 #### @PathVariable :
 
-- URL'den değerleri çıkarmak için kullanılır.
-- URL'nin bir yol değişkeni içerdiği RESTful web hizmeti için en uygundur.
-- Bir metotta birden fazla @PathVariable tanımlayabiliriz.
+- Method Level Annotation
+- It is used to get the data from the URL.
+- It is the most suitable for RESTful web service that contains a path variable.
+  ```java
+  @GetMapping("/getbyid/{id}")
+  public Brand getById(@PathVariable int id){
+      return brandService.getById(id);
+  }
+  ```
+
+---
 
 #### @RequestBody:
 
-- Bir yöntem parametresindeki bir nesneyle HTTP isteğini bağlamak için kullanılır.
+- It is used to get the data from the request body.
+- It is used to get the data from the HTTP request.
+- It is used to get the data from the HTTP request body.
+
+  ```java
+  @PostMapping("/add")
+  public void add(@RequestBody Brand brand){
+      brandService.add(brand);
+  }
+  ```
+
+---
 
 #### @RequestParam:
 
-- URL'den sorgu parametrelerini çıkarmak için kullanılır.
-- Sorgu parametresi olarak da bilinir.
+- It is used to get the data from the URL.
+- It is used to get the data from the URL query parameters.
+- It is also known as query parameter.
+
+```java
+@GetMapping("/getbyid")
+public Brand getById(@RequestParam int id){
+    return brandService.getById(id);
+}
+```
+
+---
 
 #### @RestController:
 
-- @Controller ve @ResponseBody ek açıklamalarının bir kombinasyonu olarak düşünülebilir.
-- @RestController ek açıklamasının kendisi @ResponseBody ek açıklamasıyla açıklanmıştır.
-- @ResponseBody ile her yönteme açıklama ekleme ihtiyacını ortadan kaldırır.
+- Class Level Annotation
+- It is a marker interface.
+- It is a controller layer.
+- It is used to create a controller layer.
+- It use with @RequestMapping annotation.
+- It is a combination of @Controller and @ResponseBody annotations.
+- @RestController annotation is explained with @ResponseBody annotation.
+- @ResponseBody eliminates the need to add a comment to every method.
 
-#### Örnek proje için "Kodlama.ioHM" repository'i içinde "Java-Camp-2022" ziyaret edebilirsiniz veya aşağıda bulunan linki kullanarak erişebilirsiniz.
+```java
+@RestController
+@RequestMapping("/api/brands")
+public class BrandsController{
+   @GetMapping("/getall")
+   public Employee getAll(){
+       return brandService.getAll();
+   }
+}
+```
 
-#### -> [Java-Camp-2022](https://github.com/BurakBoduroglu/Kodlama.ioHM/tree/main/Java-Camp-2022) <-
+---
+
+- You can visit each project by clicking on the links below.
+
+* -> [Java-Camp-2022](https://github.com/BurakBoduroglu/Kodlama.ioHM/tree/main/Java-Camp-2022) <-
+
+* ✅ If you like this article, you can give me a star on. 😎
+  Thanks for reading. 🙏
