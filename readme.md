@@ -1,13 +1,13 @@
-## 🤖 Bu Repository Hakkında
+## 🤖 About this repository
 
-Bu repository aşağıda bulunan konular için yardımcı kaynak olarak oluşturulmuştur. Konular ve konu anlatımlı notlar eklenecektir.
+This repository is created for helping you to learn the following topics. Topics and topic notes will be added.
 
+- Javascript
 - Spring Framework
 - Hibernate
 - MongoDB
 - Lombok
 
-Umarım bu repository size yardımcı olur. Ziyaret ettiğiniz için teşekkürler.
+I hope this repository will help you. Thank you for visiting.
 
 ~ Burak Boduroğlu 👾
-
