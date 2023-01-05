@@ -227,5 +227,113 @@ let newArr = arr.findIndex(function (val) {
 
 ---
 
+## -> Other Features
+
+---
+
+### **Destructuring Objects:**
+
+Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+
+```javascript
+let obj = {
+  name: 'John',
+  age: 30,
+  city: 'New York',
+};
+let { name, age, city } = obj;
+```
+
+---
+
+### **Destructuring Arrays:**
+
+```javascript
+let arr = ['John', 30, 'New York'];
+let [name, age, city] = arr;
+```
+
+---
+
+### **Rest Parameters:**
+
+```javascript
+function sum(...args) {
+  let sum = 0;
+  for (let arg of args) sum += arg;
+  return sum;
+}
+```
+
+---
+
+### **Spread Objects:**
+
+```javascript
+let obj1 = { name: 'John', age: 30 };
+let obj2 = { city: 'New York' };
+let obj3 = { ...obj1, ...obj2 };
+```
+
+---
+
+### **Spread Arrays:**
+
+```javascript
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let arr3 = [...arr1, ...arr2];
+```
+
+---
+
+### **Default Parameters:**
+
+```javascript
+function sum(a = 0, b = 0) {
+  return a + b;
+}
+```
+
+---
+
+### **Arrow Functions:**
+
+```javascript
+let sum = (a, b) => a + b;
+```
+
+---
+
+### **Template Literals:**
+
+```javascript
+let name = 'John';
+let age = 30;
+let city = 'New York';
+let str = `My name is ${name}, I'm ${age} years old, and I live in ${city}.`;
+```
+
+---
+
+### **Object Literal Shorthand:**
+
+```javascript
+let name = 'John';
+let age = 30;
+let city = 'New York';
+let obj = { name, age, city };
+```
+
+---
+
+### **Destructuring Params:**
+
+```javascript
+function sum({ a, b }) {
+  return a + b;
+}
+```
+
 ✅ If you like this article, you can give me a star on. 😎
 Thanks for reading. 🙏
