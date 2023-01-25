@@ -2,6 +2,7 @@
 
 This repository is created for helping you to learn the following topics. Topics and topic notes will be added.
 
+- Python
 - Javascript
 - Spring Framework
 - Hibernate
