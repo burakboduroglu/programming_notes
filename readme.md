@@ -4,10 +4,11 @@ This repository is created for helping you to learn the following topics. Topics
 
 - Python
 - Javascript
-- Spring Framework
-- Hibernate
+- Java
+- Spring Framework (in Java-Notes Folder)
+- Hibernate (in Java-Notes Folder)
 - MongoDB
-- Lombok
+- Lombok (in Java-Notes Folder)
 
 I hope this repository will help you. Thank you for visiting.
 
