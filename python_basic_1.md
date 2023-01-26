@@ -123,3 +123,4 @@ string_1.format() # format specified values in a string
 ```
 
 - Thanks for reading. If you have any questions, please feel free to ask me. I will be happy to help you. See you in the Python Basics - 2. 👋
+- If you want more exercises, you can check out my Kaggle account [-Kaggle-](https://www.kaggle.com/burakbodurolu).
