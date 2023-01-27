@@ -2,7 +2,7 @@
 
 This repository is created for helping you to learn the following topics. Topics and topic notes will be added.
 
-- Python
+- Python (Basics, OOP, Modules(Pytube, Pandas and more...))
 - Javascript
 - Java
 - Spring Framework (in Java-Notes Folder)
