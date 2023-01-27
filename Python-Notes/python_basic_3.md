@@ -93,3 +93,12 @@ file = open("file.txt", "r")
 file2 = open("file2.txt", "w")
 file2.writelines(file.readlines()) # it will write all lines to the file
 ```
+
+### - delete file
+
+```python
+import os
+
+# delete a file
+os.remove("file.txt")
+```

@@ -93,6 +93,12 @@ dictionary_1.pop("key_2") # remove an element from the dictionary
 dictionary_1.popitem() # remove the last inserted element from the dictionary
 dictionary_1.clear() # remove all elements from the dictionary
 dictionary_1.copy() # copy the dictionary
+dictionary_1.keys() # return a list of all the keys in the dictionary
+dictionary_1.values() # return a list of all the values in the dictionary
+dictionary_1.items() # return a list of tuples containing the key-value pairs
+dictionary_1.get("key_1") # return the value of the specified key
+dictionary_1.update({"key_3": "value_3"}) # update the dictionary with the specified key-value pairs
+dictionary_1.setdefault("key_4", "value_4") # return the value of the specified key. If the key does not exist: insert the key, with the specified value
 ```
 
 - ### About Strings
