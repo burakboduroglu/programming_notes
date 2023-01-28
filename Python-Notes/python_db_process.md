@@ -121,3 +121,6 @@ conn.close()
 # fetchall
 cursor = conn.execute("SELECT * FROM table_name")print(cursor.fetchall())
 ```
+
+- Thanks for reading. If you have any questions, please feel free to ask me. I will be happy to help you. See you in the Python Basics - 2. 👋
+- If you want more exercises, you can check out my Kaggle account [-Kaggle-](https://www.kaggle.com/burakbodurolu) and Python Projects account [-Python Projects-](https://github.com/burakboduroglu/Python-Projects).

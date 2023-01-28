@@ -102,3 +102,6 @@ import os
 # delete a file
 os.remove("file.txt")
 ```
+
+- Thanks for reading. If you have any questions, please feel free to ask me. I will be happy to help you. See you in the Python Basics - 2. 👋
+- If you want more exercises, you can check out my Kaggle account [-Kaggle-](https://www.kaggle.com/burakbodurolu) and Python Projects account [-Python Projects-](https://github.com/burakboduroglu/Python-Projects).
