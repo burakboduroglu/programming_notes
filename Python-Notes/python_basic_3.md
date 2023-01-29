@@ -15,9 +15,41 @@ try: # try to execute this block of code
     print("Hello World")
 except: # if there is an error, execute this block of code
     print("Something went wrong")
+else: # if there is no error, execute this block of code
+    print("Nothing went wrong")
 finally: # this block of code will be executed no matter if there is an error or not
     print("The 'try except' is finished")
 ```
+
+### - raise
+
+```python
+x = -1
+if x < 0:
+    raise Exception("Sorry, no numbers below zero") # it will raise an error
+```
+
+### - assert
+
+- assert is used to test if a condition in your code returns True, if not, the program will raise an AssertionError.
+
+```python
+x = "hello"
+assert x == "hello" # it will return nothing
+assert x == "goodbye" # it will raise an AssertionError
+```
+
+### - error types
+
+- SyntaxError
+- NameError
+- TypeError
+- IndexError
+- ValueError
+- KeyError
+- ModuleNotFoundError
+- ImportError
+- AttributeError
 
 ### - file processing
 
