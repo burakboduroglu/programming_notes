@@ -82,30 +82,30 @@ random.uniform(1, 10) # return a random float between 1 and 10
 
 ```python
 import datetime
-datetime.now() # return the current date and time
-datetime.now().year # return the current year
-datetime.now().month # return the current month
-datetime.now().day # return the current day
-datetime.now().hour # return the current hour
-datetime.now().minute # return the current minute
-datetime.now().second # return the current second
-datetime.now().microsecond # return the current microsecond
-datetime.now().strftime("%Y") # return the current year in string format
-datetime.now().strftime("%m") # return the current month in string format
-datetime.now().strftime("%d") # return the current day in string format
-datetime.now().strftime("%H") # return the current hour in string format
-datetime.now().strftime("%M") # return the current minute in string format
-datetime.now().strftime("%S") # return the current second in string format
-datetime.now().strftime("%f") # return the current microsecond in string format
-datetime.now().strftime("%Y-%m-%d") # return the current date in string format
-datetime.now().strftime("%H:%M:%S") # return the current time in string format
-datetime.now().strftime("%Y-%m-%d %H:%M:%S") # return the current date and time in string format
-datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f") # return the current date and time with microsecond in string format
-datetime.now().timestamp() # return the current date and time in seconds
-datetime.now().timedelta(days = 1)
-datetime.now().timedelta(days = -1)
-datetime.now().timedelta(hours = 1)
-datetime.now().timedelta(days = 10, hours = 1, minutes = 1, seconds = 1, microseconds = 1)
+datetime.datetime.now() # return the current date and time
+datetime.datetime.now().year # return the current year
+datetime.datetime.now().month # return the current month
+datetime.datetime.now().day # return the current day
+datetime.datetime.now().hour # return the current hour
+datetime.datetime.now().minute # return the current minute
+datetime.datetime.now().second # return the current second
+datetime.datetime.now().microsecond # return the current microsecond
+datetime.datetime.now().strftime("%Y") # return the current year in string format
+datetime.datetime.now().strftime("%m") # return the current month in string format
+datetime.datetime.now().strftime("%d") # return the current day in string format
+datetime.datetime.now().strftime("%H") # return the current hour in string format
+datetime.datetime.now().strftime("%M") # return the current minute in string format
+datetime.datetime.now().strftime("%S") # return the current second in string format
+datetime.datetime.now().strftime("%f") # return the current microsecond in string format
+datetime.datetime.now().strftime("%Y-%m-%d") # return the current date in string format
+datetime.datetime.now().strftime("%H:%M:%S") # return the current time in string format
+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") # return the current date and time in string format
+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f") # return the current date and time with microsecond in string format
+datetime.datetime.now().timestamp() # return the current date and time in seconds
+datetime.datetime.now().timedelta(days = 1)
+datetime.datetime.now().timedelta(days = -1)
+datetime.datetime.now().timedelta(hours = 1)
+datetime.datetime.now().timedelta(days = 10, hours = 1, minutes = 1, seconds = 1, microseconds = 1)
 ```
 
 ### - import local module 🌍
