@@ -76,3 +76,17 @@ SELECT * FROM table_name WHERE column_name = value ORDER BY column_name;
 ```sql
 SELECT * FROM table_name WHERE column_name = value GROUP BY column_name;
 ```
+
+### Table of Where Clause Operators
+
+| Operator | Description                                                                 |
+| -------- | --------------------------------------------------------------------------- |
+| =        | Equal                                                                       |
+| >        | Greater than                                                                |
+| <        | Less than                                                                   |
+| >=       | Greater than or equal                                                       |
+| <=       | Less than or equal                                                          |
+| <>       | Not equal. Note: In some versions of SQL this operator may be written as != |
+| BETWEEN  | Between a certain range                                                     |
+| LIKE     | Search for a pattern                                                        |
+| IN       | To specify multiple possible values for a column                            |
