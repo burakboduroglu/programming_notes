@@ -3,6 +3,8 @@
 - This is a collection of SQL notes.
 - The notes are written in Markdown format.
 
+### Table of Contents 📚
+
 | File Name         | Topics                |
 | ----------------- | --------------------- |
 | sql_basic_1.md    | Basic SQL commands    |
