@@ -28,4 +28,4 @@
 
 ### Thanks for reading 🙏
 
-- If you like this repo, please give it a star.
+- If you like this repo, please give it a star. 🌟

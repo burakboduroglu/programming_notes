@@ -1,15 +1,15 @@
-### About SQL-Notes 🚀👩‍🚀
+### About Java-Notes 🚀👩‍🚀
 
-- This is a collection of SQL notes.
+- This is a collection of Java notes.
 - The notes are written in Markdown format.
 
 ### Table of Contents 📚
 
-| File Name         | Topics                |
-| ----------------- | --------------------- |
-| sql_basic_1.md    | Basic SQL commands    |
-| sql_basic_2.md    | Where Clause          |
-| sql_advanced_1.md | Advanced SQL commands |
+| File Name                | Topics                               |
+| ------------------------ | ------------------------------------ |
+| jpa_hibernate.md         | Hibernate Annotations Examples       |
+| lombok.md                | Lombok Annotations Examples          |
+| spring_boot_framework.md | Spring Boot Annatations and Examples |
 
 ### How to use this repo 🤔
 

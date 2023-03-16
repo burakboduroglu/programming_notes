@@ -1,15 +1,13 @@
-### About SQL-Notes 🚀👩‍🚀
+### About Javascript-Notes 🚀👩‍🚀
 
-- This is a collection of SQL notes.
+- This is a collection of Javascript notes.
 - The notes are written in Markdown format.
 
 ### Table of Contents 📚
 
-| File Name         | Topics                |
-| ----------------- | --------------------- |
-| sql_basic_1.md    | Basic SQL commands    |
-| sql_basic_2.md    | Where Clause          |
-| sql_advanced_1.md | Advanced SQL commands |
+| File Name                   | Topics           |
+| --------------------------- | ---------------- |
+| javascript_array_methods.md | JS Array Methods |
 
 ### How to use this repo 🤔
 
