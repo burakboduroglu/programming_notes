@@ -1,4 +1,6 @@
-## 🤖 About this repository 🚀👩‍🚀
+<div align="center">
+<h2>🤖 About this repository 🚀👩‍🚀</h2>
+</div>
 
 - This repository is a collection of my personal notes.
 - I am using this repository to keep my notes up to date.
