@@ -5,11 +5,11 @@
 
 ### Table of Contents 📚
 
-| File Name                | Topics                               |
-| ------------------------ | ------------------------------------ |
-| jpa_hibernate.md         | Hibernate Annotations Examples       |
-| lombok.md                | Lombok Annotations Examples          |
-| spring_boot_framework.md | Spring Boot Annatations and Examples |
+| File Name                                                                                                                     | Topics                               |
+| ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| [jpa_hibernate.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/Java-Notes/jpa_hibernate.md)                 | Hibernate Annotations Examples       |
+| [lombok.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/Java-Notes/lombok.md)                               | Lombok Annotations Examples          |
+| [spring_boot_framework.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/Java-Notes/spring_boot_framework.md) | Spring Boot Annatations and Examples |
 
 ### How to use this repo 🤔
 
