@@ -5,14 +5,14 @@
 
 ### Table of Contents 📚
 
-| File Name            | Topics                                        |
-| -------------------- | --------------------------------------------- |
-| python_basic_1.md    | Python Data Structures                        |
-| python_basic_2.md    | Python functions, loops, conditions           |
-| python_basic_3.md    | Error Handling, File Process                  |
-| python_db_process.md | Database Process                              |
-| advanced_python_1.md | Python Comprehensions                         |
-| advanced_python_2.md | Python useful functions (map, filter, reduce) |
+| File Name                                                                                                                | Topics                                        |
+| ------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
+| [python_basic_1.md ](https://github.com/burakboduroglu/Programming-Notes/blob/main/Python-Notes/python_basic_1.md)       | Python Data Structures                        |
+| [python_basic_2.md ](https://github.com/burakboduroglu/Programming-Notes/blob/main/Python-Notes/python_basic_2.md)       | Python functions, loops, conditions           |
+| [python_basic_3.md ](https://github.com/burakboduroglu/Programming-Notes/blob/main/Python-Notes/python_basic_3.md)       | Error Handling, File Process                  |
+| [python_db_process.md ](https://github.com/burakboduroglu/Programming-Notes/blob/main/Python-Notes/python_db_process.md) | Database Process                              |
+| [advanced_python_1 ](https://github.com/burakboduroglu/Programming-Notes/blob/main/Python-Notes/advanced_python_1.md)    | Python Comprehensions                         |
+| [advanced_python_2 ](https://github.com/burakboduroglu/Programming-Notes/blob/main/Python-Notes/advanced_python_2.md)    | Python useful functions (map, filter, reduce) |
 
 ### How to use this repo 🤔
 

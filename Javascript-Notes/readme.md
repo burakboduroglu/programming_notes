@@ -5,9 +5,9 @@
 
 ### Table of Contents 📚
 
-| File Name                   | Topics           |
-| --------------------------- | ---------------- |
-| javascript_array_methods.md | JS Array Methods |
+| File Name                                                                                                                                 | Topics           |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| [javascript_array_methods.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/javascript_array_methods.md) | JS Array Methods |
 
 ### How to use this repo 🤔
 

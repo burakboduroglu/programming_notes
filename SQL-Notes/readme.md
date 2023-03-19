@@ -5,11 +5,11 @@
 
 ### Table of Contents 📚
 
-| File Name         | Topics                |
-| ----------------- | --------------------- |
-| sql_basic_1.md    | Basic SQL commands    |
-| sql_basic_2.md    | Where Clause          |
-| sql_advanced_1.md | Advanced SQL commands |
+| File Name                                                                                                      | Topics                |
+| -------------------------------------------------------------------------------------------------------------- | --------------------- |
+| [sql_basic_1.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/SQL-Notes/sql_basic_1.md)       | Basic SQL commands    |
+| [sql_basic_2.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/SQL-Notes/sql_basic_2.md)       | Where Clause          |
+| [sql_advanced_1.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/SQL-Notes/sql_advanced_1.md) | Advanced SQL commands |
 
 ### How to use this repo 🤔
 
