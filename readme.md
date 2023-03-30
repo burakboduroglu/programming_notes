@@ -17,8 +17,9 @@
 
 - In this section, I will share my notes about Java.
 - You can reach more information about Java note you can visit contents table of Java notes.
-- [🥳 Lombok](https://github.com/burakboduroglu/Programming-Notes/blob/main/Java-Notes/lombok.md)
-- [📃 Hibernate](https://github.com/burakboduroglu/Programming-Notes/blob/main/Java-Notes/jpa_hibernate.md)
+- [📃 Content Table of Java Notes](https://github.com/burakboduroglu/Programming-Notes/blob/main/Java-Notes/readme.md)
+- [🌱 Lombok](https://github.com/burakboduroglu/Programming-Notes/blob/main/Java-Notes/lombok.md)
+- [🌱 Hibernate](https://github.com/burakboduroglu/Programming-Notes/blob/main/Java-Notes/jpa_hibernate.md)
 - [🌱 Spring Boot](https://github.com/burakboduroglu/Programming-Notes/blob/main/Java-Notes/spring_boot_framework.md)
 
 ### 👾 Javascript Notes
