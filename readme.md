@@ -27,6 +27,7 @@
 - You can reach more information about Javascript note you can visit contents table of Javascript notes.
 - [📃 Content Table of Javascript Notes](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/readme.md)
 - [🥳 JS Array Methods](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/javascirpt_array_methods.md)
+- [🥳 Closures, Currying and Compose](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/closures_currying_compose.md)
 
 ### 🐍 Python Notes
 
