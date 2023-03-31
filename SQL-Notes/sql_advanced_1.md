@@ -79,3 +79,14 @@
 
 - **Subquery** - A query within another query and embedded within the WHERE clause
 - example: `SELECT * FROM customers WHERE country = 'USA' AND city IN (SELECT city FROM customers WHERE country = 'UK');`
+
+### 15. SQL - Check 
+
+- **CHECK** - Ensures that all values in a column satisfies a specific condition
+- example: `CREATE TABLE Persons (ID int NOT NULL, LastName varchar(255) NOT NULL, FirstName varchar(255), Age int, CHECK (Age>=18));`
+
+### 16. SQL - Unique
+
+- **UNIQUE** - Ensures that all values in a column are different
+- example: `CREATE TABLE Persons (ID int NOT NULL, LastName varchar(255) NOT NULL, FirstName varchar(255), Age int, UNIQUE (ID));`
+

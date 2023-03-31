@@ -10,6 +10,8 @@
 | [sql_basic_1.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/SQL-Notes/sql_basic_1.md)       | Basic SQL commands    |
 | [sql_basic_2.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/SQL-Notes/sql_basic_2.md)       | Where Clause          |
 | [sql_advanced_1.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/SQL-Notes/sql_advanced_1.md) | Advanced SQL commands |
+| [psql_on_terminal.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/SQL-Notes/psql_on_terminal.md)       | PSQL commands on terminal    |
+
 
 ### How to use this repo 🤔
 
