@@ -3,7 +3,7 @@
 ### `\l :`
 - List all databases
 
-### `\l+ :` 
+### `\l+ :` 
 - List all databases with more details
 
 ### `\c <database_name> :`
