@@ -5,10 +5,11 @@
 
 ### Table of Contents 📚
 
-| File Name                                                                                                                                   | Topics                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| [javascript_array_methods.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/javascript_array_methods.md)   | JS Array Methods                  |
-| [closures_currying_compose.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/closures_currying_compose.md) | JS Closures, Currying and Compose |
+| File Name                                                                                                                                   | Topics                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| [javascript_array_methods.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/javascript_array_methods.md)   | JS Array Methods                         |
+| [closures_currying_compose.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/closures_currying_compose.md) | JS Closures, Currying and Compose        |
+| [async_js.md](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/async_js.md)                                   | JS Fetch API, Promise and ASYNC Function |
 
 ### How to use this repo 🤔
 
