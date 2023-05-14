@@ -29,6 +29,7 @@
 - [📃 Content Table of Javascript Notes](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/readme.md)
 - [🥳 JS Array Methods](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/javascirpt_array_methods.md)
 - [🥳 Closures, Currying and Compose](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/closures_currying_compose.md)
+- [🥳 ASYNC, Fetch API, Promise and then](https://github.com/burakboduroglu/Programming-Notes/blob/main/Javascript-Notes/async_js.md)
 
 ### 🐍 Python Notes
 
